@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">User name</label>
+                <input type="text" id="username" placeholder="Your username">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Type your email">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password </label>
+                <input type="password" id="password" placeholder="Your password">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password-confirmation">Password Confirmation</label>
+                <input type="password" id="password-confirmation" placeholder="Password confirmation">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <i class="fa-regular fa-circle-check"></i>
+                <small>Error message</small>
+            </div>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Form submitted successfully</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/698cdf61fa.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
